@@ -46,22 +46,24 @@ export default function App() {
       <h1>The Ultimate Stress Reliever</h1>
 
       <div id="gove" onClick={addCookie}>
-        <img id="image" src="./src/assets/Gove.jpeg" />
+        <img id="image" src="./public/Gove.jpeg" />
       </div>
       <div id="txt"> Smack the b up!</div>
 
-      <button onClick={addToCps}>Click to smack him some more</button>
+      <button className="buttons" onClick={addToCps}>
+        Click to smack him some more. He&apos;s worth it.
+      </button>
       <p>He&apos;s been slapped {cookies} times</p>
-      <p>Currently taking {cps} slaps per second</p>
+      <p>Currently only taking {cps} slaps per second</p>
 
       <div className="upgrades">
-        <button onClick={doubleCps}>
-          Buy a wet towel to double the slap rate
+        <button className="buttons" onClick={doubleCps}>
+          Buy a wet towel to bosh him more. He can&apos;t get any uglier.
         </button>
       </div>
 
       <div className="upgrades">
-        <button onClick={quadCps}>
+        <button className="buttons" onClick={quadCps}>
           Buy a sock full of oranges to really hurt the mutha
         </button>
       </div>

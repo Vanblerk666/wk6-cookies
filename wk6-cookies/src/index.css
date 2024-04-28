@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("./src/assets/Parliament.jpeg");
+  background-image: url("./public/Parliament.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -33,6 +33,18 @@
   color: white;
   margin-bottom: 30px;
   font-size: large;
+}
+
+.buttons {
+  height: 50px;
+  width: 220px;
+  font-family: monospace;
+  color: black;
+  background-color: lightblue;
+  border: 5px black;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .upgrades {
