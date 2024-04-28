@@ -1,4 +1,6 @@
 :root {
+  background-color: black;
+  color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   margin: 0%;
@@ -6,13 +8,33 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("./src/assets/Parliament.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #gove {
   height: 200px;
   width: 200px;
-  background-image: url("./src/assets/Gove.jpeg");
-  background-size: cover; /* Adjust as needed */
-  background-repeat: no-repeat;
+  color: purple;
+  margin-bottom: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#image {
+  border-radius: 50%;
+  border: 10px yellow;
+}
+
+#txt {
+  background-color: transparent;
   color: white;
+  margin-bottom: 30px;
+  font-size: large;
+}
+
+.upgrades {
+  margin-bottom: 20px;
 }

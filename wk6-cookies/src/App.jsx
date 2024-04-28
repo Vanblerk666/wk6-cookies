@@ -11,7 +11,7 @@ export default function App() {
     // a timer to be created when the page loads to increase cookies by cps every second
     const myInterval = setInterval(() => {
       addCookie();
-    }, 1000 / cps);
+    }, 10000 / cps);
 
     // Use every time UseEffect is used?
     // to clean up my timer when I rerun the useEffect to i don't end up with a billion timers
@@ -26,21 +26,45 @@ export default function App() {
       return currentCookies + 1;
     });
   }
-  // simple upgraede button
-  function buyUpgrade() {
+  // upgrade button
+  function addToCps() {
     setCps(cps + 1);
+  }
+
+  // double cps upgrade
+  function doubleCps() {
+    setCps(cps * 2);
+  }
+
+  // cps x4 upgrade
+  function quadCps() {
+    setCps(cps * 4);
   }
 
   return (
     <div>
-      <h1>Stress Reliever</h1>
+      <h1>The Ultimate Stress Reliever</h1>
+
       <div id="gove" onClick={addCookie}>
-        Smack the b up!
+        <img id="image" src="./src/assets/Gove.jpeg" />
+      </div>
+      <div id="txt"> Smack the b up!</div>
+
+      <button onClick={addToCps}>Click to smack him some more</button>
+      <p>He&apos;s been slapped {cookies} times</p>
+      <p>Currently taking {cps} slaps per second</p>
+
+      <div className="upgrades">
+        <button onClick={doubleCps}>
+          Buy a wet towel to double the slap rate
+        </button>
       </div>
 
-      <button onClick={buyUpgrade}>Click to smack him some more</button>
-      <p>He's been slapped {cookies} times</p>
-      <p>Currently taking {cps} slaps per second</p>
+      <div className="upgrades">
+        <button onClick={quadCps}>
+          Buy a sock full of oranges to really hurt the mutha
+        </button>
+      </div>
     </div>
   );
 }
