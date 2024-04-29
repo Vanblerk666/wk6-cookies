@@ -46,7 +46,7 @@ export default function App() {
       <h1>The Ultimate Stress Reliever</h1>
 
       <div id="gove" onClick={addCookie}>
-        <img id="image" src="/public/Gove.jpeg" />
+        <img id="image" src="Gove.jpeg" />
       </div>
       <div id="txt"> Smack the b up!</div>
 
